@@ -1,5 +1,4 @@
 const fsp = require('fs').promises;
-const path = require('path');
 const randomstring = require('random-string-generator');
 
 class RandomObjectGenerator {
@@ -35,7 +34,7 @@ class RandomObjectGenerator {
             randomObjects += currentObject;
             this.incrementCount(remainder, targetMethod)
         }
-        fsp.writeFile('./public/files/randomObjects.txt', randomObjects);
+        fsp.writeFile('./public/randomObjects.txt', randomObjects);
         return JSON.stringify({
             realnum : this.realNumCount,
             int : this.intCount,

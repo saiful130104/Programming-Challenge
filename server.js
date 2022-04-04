@@ -19,7 +19,7 @@ const server = http.createServer( async (req, res) => {
         res.end(homepage);
     } else if (pathname === '/download-file'){
         const fs = require('fs');
-        let file = fsp.readFile( path.join(__dirname,'public/files/randomObjects.txt'));
+        const file = fsp.readFile( path.join(__dirname,'public/randomObjects.txt'));
         res.setHeader('Content-Type', 'text/plain');
         res.setHeader('Content-Disposition', 'attachment; filename=randomObjects.txt');
         res.writeHead(200, {
