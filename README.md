@@ -1,8 +1,8 @@
 # Random Object Generator
 
-A web app to face Programming Challenge for Software Engineering position in Omnilytics.
+A web app for generating random object with Node JS.
 
-## Installation
+## Prerequisite 
 Download [Node JS](https://pip.pypa.io/en/stable/) .Recommended version(16.13.1)
 
-Use code editor .Recommended [VS Code](https://code.visualstudio.com/download)
+## Installation
